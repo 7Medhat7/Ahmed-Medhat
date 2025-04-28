@@ -8924,7 +8924,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-hireme {
   background: #ffbd39;
-  z-index: -1; }
+  z-index: 1; }
   .ftco-hireme h2 {
     color: #fff;
     font-size: 40px;
@@ -9714,13 +9714,13 @@ border-radius: 20px;
 #home-section-item {
   z-index: -1;
   position: relative;
-  user-select: none; /* prevent text/image selection */
-  pointer-events: none; /* prevent clicking */
+  user-select: none; 
+  pointer-events: none; 
 }
 
 #btn-hire a {
-  pointer-events: auto; /* allow clicking only on the <a> inside #btn-hire */
-  user-select: auto; /* allow text selection (if needed) */
+  pointer-events: auto; 
+  user-select: auto; 
   position: relative;
   z-index: 10;
 }
