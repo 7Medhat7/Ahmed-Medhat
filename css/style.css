@@ -8437,7 +8437,7 @@ h1, h2, h3, h4, h5,
       background-position: center center;
       height: 750px;
       position: relative;
-      z-index: 1
+      z-index: 4
       ; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
@@ -8521,6 +8521,8 @@ h1, h2, h3, h4, h5,
           font-size: 14px;
           letter-spacing: 3px;
           text-transform: uppercase;
+          position: relative;
+          z-index: 10;
           color: #ffbd39; }
         .owl-carousel.home-slider .slider-item .slider-text .text {
           position: relative;
@@ -9699,6 +9701,26 @@ border-radius: 20px;
 
 
     #home-section{
-      z-index: -1;
+      z-index: 0;
       position: relative;
+      pointer-events: none;
+
     }
+#btn-hire{
+    position: relative !important;
+    z-index: 10 !important;
+  
+}
+#home-section-item {
+  z-index: -1;
+  position: relative;
+  user-select: none; /* prevent text/image selection */
+  pointer-events: none; /* prevent clicking */
+}
+
+#btn-hire a {
+  pointer-events: auto; /* allow clicking only on the <a> inside #btn-hire */
+  user-select: auto; /* allow text selection (if needed) */
+  position: relative;
+  z-index: 10;
+}
