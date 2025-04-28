@@ -9696,3 +9696,9 @@ border-radius: 20px;
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    #home-section{
+      z-index: -1;
+      position: relative;
+    }
